@@ -125,19 +125,26 @@
 
         </a>
         <a href="https://www.mozilla.org/">
-          <img>
+          <img srcset="dinosaur120.png 120w,dinosaur400.png 400w"
+          sizes="(max-width: 500px) 120px,
+          400px" src="dinosaur400.png" alt="more about dinosaur" >
         </a>
         <a href="https://addons.mozilla.org/">
-          <img>
+          <img srcset="addons120.jpg 120w, addons400.jpg 400w"
+          sizes="(max-width: 500px) 120px,
+                      400px" src="addons400.jpg" alt="add-ons">
         </a>
         <a href="https://developer.mozilla.org/en-US/">
-          <img>
+          <img src="mdn.svg" role="img" alt="web development with MDN">
         </a>
         <div class="clearfix"></div>
       </div>
 
       <div class="red-panda">
-        <!-- insert picture element -->
+        <picture>
+          <source media="(max-width: 600px)" srcset="potrait panada.jpg">
+          <img src="landscape panada .jpg" alt="red panada">
+        </picture>
       </div>
 
     </main>
