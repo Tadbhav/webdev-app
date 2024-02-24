@@ -1,5 +1,31 @@
+/*
+NAME: Tadbhav Marken
+DATE: February 23rd 2024
+
+Description: Web development Assignment3 Part2
+*/
 html {
   font-family: sans-serif;
 }
 
 /* Your CSS below here */
+div{
+  width: 200px;
+  height: 165px;
+  line-height: 165px;
+  margin: auto;
+  text-align: center;
+  background-color: tan;
+  font-size: 1.17rem;
+  color: white;
+  text-shadow: 1.5px 1.5px 1.5px black;
+  border-radius: 7%;
+  border: 1px solid brown;
+
+  background-image: linear-gradient(
+    to top left,
+    rgba(0, 0, 0, 0.32),rgba(0, 0, 0, 0.365) 35%,rgba(255, 255, 255, 0.301)
+  );
+  box-shadow: inset 5px 5px 5px rgba(255, 255, 255, 0.233),
+  inset - 5px 5px rgba(255, 255, 255, 0.276), 5px 5px 5px black; 
+}
