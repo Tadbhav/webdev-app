@@ -51,7 +51,7 @@ header, footer {
 }
 
 @font-face {
-  font-family: "Playfair Display", serif;
+  font-family: "Playfair Display", sans-serif;
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
@@ -59,18 +59,20 @@ header, footer {
 }
 
 /* General text styling */
-body {
+html {
+  font-family:"Arvo", serif ;
   font-size: 10px;
-  line-height: 1.5;
 }
 
 h1 {
+  font-family:"Arvo", serif ;
   font-size: 2em; 
   text-align: center;
   letter-spacing: 2px;
 }
 
 h2 {
+  font-family:"Arvo", serif ;
   font-size: 1.5em; 
   letter-spacing: 1px;
 }
@@ -134,5 +136,15 @@ nav li a {
   width: 100%;
   line-height: 3;
   text-align: center;
+  font-size: 2.2rem;
+  border: 1px solid #a66;
+}
 
+nav li a:focus, nav li a:hover{
+  border-width: 3px;
+}
+
+nav li{
+  list-style-type: none;
+  margin: 2.2rem 0;
 }
