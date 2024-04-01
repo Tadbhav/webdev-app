@@ -21,13 +21,8 @@ for( let i = 0; i < imageArray.length; i++ )
     });
 }
 
-const newImage = document.createElement('img');
-newImage.setAttribute('src', xxx);
-newImage.setAttribute('alt', xxx);
-thumbBar.appendChild(newImage);
-
 /* Wiring up the Darken/Lighten button */
-btn.addEventListener('click', (e) => {
+btn.addEventListener('click', (u) => {
     const btnClass = btn.getAttribute("class");
     if (btnClass === 'dark')
     {
