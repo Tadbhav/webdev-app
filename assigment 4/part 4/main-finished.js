@@ -179,9 +179,17 @@ function loop() {
   ctx.fillRect(0, 0, width, height);
 
   for (const ball of balls) {
+    if(ball.exists)
+    {
     ball.draw();
     ball.update();
     ball.collisionDetect();
+  }
+
+  evilcircle.draw();
+  evilcircle.checkBounds();
+  evilcircle.collisionDetect();
+
   }
 
   requestAnimationFrame(loop);
