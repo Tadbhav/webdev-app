@@ -2,7 +2,9 @@
 
 const canvas = document.querySelector("canvas");
 const ctx = canvas.getContext("2d");
+let count = 0;
 
+var element = document.getElementById("ballcount");
 const width = (canvas.width = window.innerWidth);
 const height = (canvas.height = window.innerHeight);
 
@@ -144,6 +146,8 @@ class EvilCircle extends Shape{
             ball.exists = false;
             count--;
             element.innerHTML = 'Ball count: ' + count;
+            
+            
           }
         }
       }
@@ -166,7 +170,7 @@ while (balls.length < 25) {
     randomRGB(),
     size
   );
-
+  count++;
   balls.push(ball);
 }
 let evilcircle = new EvilCircle(
@@ -186,12 +190,10 @@ function loop() {
     ball.collisionDetect();
   }
 
+  }
   evilcircle.draw();
   evilcircle.checkBounds();
   evilcircle.collisionDetect();
-
-  }
-
   requestAnimationFrame(loop);
 }
 
